@@ -1,4 +1,6 @@
-﻿namespace Core.Entities.Admin
+﻿using Core.Entities.Customers;
+
+namespace Core.Entities.Admin
 {
     public class User : BaseEntity
     {
@@ -14,6 +16,8 @@
         public int? BranchId { get; set; }
 
         public UserType UserType { get; set; }
+
+        public Branch Branch { get; set; }
 
 
     }
