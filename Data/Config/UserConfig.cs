@@ -19,6 +19,10 @@ namespace Data.Config
                 .IsRequired(false);
 
             builder.HasKey(x => x.Id);
+            builder.Property(x => x.Name).HasMaxLength(100);
+            builder.Property(x => x.Email).HasMaxLength(150);
+
         }
     }
+
 }
