@@ -7,10 +7,8 @@ namespace Core.Entities.Settings
     {
         public int YearId { get; set; }
 
-        public int BranchId { get; set; }
-
         public DateTime Date { get; set; }
 
-        public Branch Branch { get; set; }
+        public Year Year { get; set; }
     }
 }

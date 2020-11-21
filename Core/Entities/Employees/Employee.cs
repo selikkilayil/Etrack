@@ -1,4 +1,5 @@
 ﻿using Core.Entities.Customers;
+using Core.Entities.Payroll;
 using System.Collections.Generic;
 using System.Text;
 
@@ -15,5 +16,7 @@ namespace Core.Entities.Employees
         public decimal Salary { get; set; }
 
         public Branch Branch { get; set; }
+
+        public ICollection<SalaryHistory> Histories { get; set; }
     }
 }
